@@ -16,6 +16,9 @@ const routes: Routes = [
   {
     path: 'destination', component: DestinationComponent, children: [
       {
+        path: '', component: MoonComponent
+      },
+      {
         path: 'moon', component: MoonComponent
       },
       {
