@@ -1,9 +1,9 @@
 <main class="flex items-center w-full h-full">
-  <div class="w-9/12 mx-auto bg-red-800">
+  <div class="w-9/12 mx-auto">
     <!-- max-w-6xl -->
     <p class="text-2xl text-white"><span class="text-gray-600">01</span> PICK YOUR DESTINATION</p>
     <section>
-      <nav class="float-right">
+      <nav class="float-right pr-[340px]">
         <ul class="flex gap-6 text-white">
           <li *ngFor="let link of links">
             <a [routerLink]="link.goTo">
