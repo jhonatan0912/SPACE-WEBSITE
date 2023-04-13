@@ -5,10 +5,11 @@
     <section>
       <nav class="float-right">
         <ul class="flex gap-6 text-white">
-          <li><a routerLink="/destination/moon">MOON</a></li>
-          <li><a routerLink="/destination/mars">MARS</a></li>
-          <li><a routerLink="/destination/europa">EUROPA</a></li>
-          <li><a routerLink="/destination/titan">TITAN</a></li>
+          <li *ngFor="let link of links">
+            <a [routerLink]="link.goTo">
+              {{link.name}}
+            </a>
+          </li>
         </ul>
       </nav>
       <router-outlet></router-outlet>
