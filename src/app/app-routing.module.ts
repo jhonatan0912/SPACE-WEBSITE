@@ -37,6 +37,9 @@ const routes: Routes = [
   },
   {
     path: 'technology', component: TechnologyComponent
+  },
+  {
+    path: '**', component: HomeComponent
   }
 ];
 
